@@ -1,0 +1,121 @@
+body {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header header header header header header header'
+  'nav nav nav main main main main main main main main main'
+  'nav nav nav aside aside aside aside section1 section1 section2 section2 section2'
+  'nav nav nav footer footer footer footer footer footer footer footer footer'
+  ;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgb(193, 211, 228);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(193, 211, 228);
+  grid-area: header;
+}
+header div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: darkblue;
+}
+header div input{
+  padding: 5px 50px;
+  font-size: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(14, 14, 14);
+}
+nav {
+  width: 210px;
+  background-color: darkblue;
+  grid-area: nav; 
+  align-items: center;
+  display: grid;
+  justify-content: space-around;
+  text-align: center;  
+  gap: 2px;
+  padding: 20px;
+  border-radius: 5px;
+}
+nav a{
+  display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  
+  
+}
+nav a:hover{
+  background-color: #ddd;
+}
+main{
+  background-color: darkblue;
+  grid-area: main;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+main h3 {
+  color: aliceblue;
+  font-size: 19px;
+}
+main p{
+  color: aliceblue;
+}
+main img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+aside{
+  background-color: white;
+  grid-area: aside;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  
+}
+.section1 {
+  background-color: white;
+  grid-area: section1;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+.section1 div{
+  background-color: aliceblue;
+  border-radius: 1rem;
+  padding: 0px 10px;
+}
+.section2{
+background-color: white;
+grid-area: section2;
+border-radius: 5px;
+padding: 1rem 2rem;
+}
+.section2 div{
+  background-color: aliceblue;
+  border-radius: 1rem;
+  padding: 0px 10px;
+ 
+}
+.bola{
+  color: darkblue;
+}
+footer{
+ background-color:white;
+ grid-area: footer;
+ border-radius: 10px;
+ padding: 2rem 3rem;
+}
+footer div{
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 1px 1rem;
+    
+}
